@@ -5,7 +5,6 @@ interface WeatherCardProps {
   windSpeed: number
   cityName: string
   country: string
-  icon: string
 }
 
 const WeatherCard: React.FC<WeatherCardProps> = ({
@@ -14,8 +13,7 @@ const WeatherCard: React.FC<WeatherCardProps> = ({
   humidity,
   windSpeed,
   cityName,
-  country,
-  icon
+  country
 }) => {
   return (
     <div className="space-y-4">
