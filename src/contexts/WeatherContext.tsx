@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
+import React, { createContext, useState, useEffect, useCallback, useRef } from 'react';
 import type { WeatherData } from '../types/weather.types';
 import type { Location } from '../services/locationService';
 import weatherService from '../services/weatherService';
@@ -239,17 +239,6 @@ export const WeatherProvider: React.FC<WeatherProviderProps> = ({ children }) =>
       {children}
     </WeatherContext.Provider>
   );
-};
-
-/**
- * Custom hook to use weather context
- */
-export const useWeatherContext = () => {
-  const context = useContext(WeatherContext);
-  if (context === undefined) {
-    throw new Error('useWeatherContext must be used within a WeatherProvider');
-  }
-  return context;
 };
 
 export default WeatherContext;

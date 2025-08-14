@@ -1,4 +1,4 @@
-import { useWeatherContext } from '../contexts/WeatherContext';
+import { useWeatherContext } from './useWeatherContext';
 import { useMemo } from 'react';
 import { getWeatherInfo, getWeatherGradient, getUVIndexLevel, formatVisibility, getWindDirection } from '../utils/weatherCodeMapping';
 

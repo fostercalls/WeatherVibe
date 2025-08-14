@@ -1,4 +1,4 @@
-import { useWeatherContext } from '../contexts/WeatherContext';
+import { useWeatherContext } from './useWeatherContext';
 import { useState, useCallback, useEffect } from 'react';
 import locationService from '../services/locationService';
 import type { Location } from '../services/locationService';
